@@ -12,8 +12,9 @@ namespace PlanBottler
 {
     public partial class Form1 : Form
     {
-        Beer beer = new Beer();
-
+        Beer Wasseralfinger = new Beer("Wasseralfinger", 10, 2.50);
+        Beer Heineken = new Beer("Heineken", 10, 2.80);
+        
         public Form1()
         {
             InitializeComponent();
@@ -63,8 +64,20 @@ namespace PlanBottler
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            if (comboBox2.SelectedIndex==0)
+            {
+                comboBox5.Items.Add(Wasseralfinger.price);
+                comboBox5.Items.Add(Heineken.price);                
+            }
         }
-       
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox2.SelectedIndex==0)
+            {
+                comboBox3.Items.Add(Wasseralfinger.name);
+                comboBox3.Items.Add(Heineken.name);
+            }
+        }
     }
 }
