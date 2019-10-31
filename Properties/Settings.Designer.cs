@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PlanBottler.Properties
+namespace PlanBottler1.Properties
 {
 
 

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PlanBottler
+namespace PlanBottler1
 {
-    public class Beer
+    class Water: Non_Alcoholic
     {
         //Initialisieren der Variablen
         int _count;
@@ -14,7 +14,7 @@ namespace PlanBottler
         string _name;
 
         //Konstruktor
-        public Beer(string name, int count, double price)
+        public Water(string name, int count, double price)
         {
             _name = name;
             _count = count;
@@ -39,8 +39,6 @@ namespace PlanBottler
         {
             get { return _name; }
         }
-
-
 
     }
 }

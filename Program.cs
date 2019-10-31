@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PlanBottler
+namespace PlanBottler1
 {
     static class Program
     {
